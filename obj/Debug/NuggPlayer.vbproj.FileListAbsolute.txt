@@ -1,0 +1,13 @@
+C:\Users\Michael\source\repos\NuggPlayer\NuggPlayer\bin\Debug\NuggPlayer.exe.config
+C:\Users\Michael\source\repos\NuggPlayer\NuggPlayer\bin\Debug\NuggPlayer.exe
+C:\Users\Michael\source\repos\NuggPlayer\NuggPlayer\bin\Debug\NuggPlayer.pdb
+C:\Users\Michael\source\repos\NuggPlayer\NuggPlayer\bin\Debug\NuggPlayer.xml
+C:\Users\Michael\source\repos\NuggPlayer\NuggPlayer\obj\Debug\NuggPlayer.vbproj.AssemblyReference.cache
+C:\Users\Michael\source\repos\NuggPlayer\NuggPlayer\obj\Debug\NuggPlayer.vbproj.SuggestedBindingRedirects.cache
+C:\Users\Michael\source\repos\NuggPlayer\NuggPlayer\obj\Debug\NuggPlayer.Form1.resources
+C:\Users\Michael\source\repos\NuggPlayer\NuggPlayer\obj\Debug\NuggPlayer.Resources.resources
+C:\Users\Michael\source\repos\NuggPlayer\NuggPlayer\obj\Debug\NuggPlayer.vbproj.GenerateResource.cache
+C:\Users\Michael\source\repos\NuggPlayer\NuggPlayer\obj\Debug\NuggPlayer.vbproj.CoreCompileInputs.cache
+C:\Users\Michael\source\repos\NuggPlayer\NuggPlayer\obj\Debug\NuggPlayer.exe
+C:\Users\Michael\source\repos\NuggPlayer\NuggPlayer\obj\Debug\NuggPlayer.xml
+C:\Users\Michael\source\repos\NuggPlayer\NuggPlayer\obj\Debug\NuggPlayer.pdb

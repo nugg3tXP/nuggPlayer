@@ -1,9 +1,6 @@
 nuggPlayer
-A VLC inspired video player, with lots of stolen code
 
-Known bugs:
-Resizing while playing video doesn't resize the video
-MP4 to AVI converter is glitchy (could be ffmpeg version)
-ffmpeg downloads slow
+This is nuggPlayer, a VLC inspired media player, that only supports .avi files.
 
-We're now currently on version 0.2.
+Stolen from here: https://www.youtube.com/watch?v=yohVerLPSTw
+

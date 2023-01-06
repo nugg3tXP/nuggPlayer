@@ -1,4 +1,4 @@
-﻿Public Class Form1
+﻿Public Class Dark
     Private Declare Function mciSendString Lib "winmm.dll" Alias "mciSendStringA" (ByVal lpstrCommand As String, ByVal lpstrReturnString As String, ByVal uReturnLength As Integer, ByVal hwndCallback As Integer) As Integer
 
     Dim filename As String
@@ -6,26 +6,13 @@
     Dim File As String
     Dim PPState As String = "Pause"
     Dim TmrNum As Integer = 1000
-
-    'Get URL and File
-    Dim fileURL As String = "https://powervideos.net/ffmpeg.exe"
-    Dim fileName2 As String = My.Computer.FileSystem.GetName(fileURL)
-
-    'Set Path
-    Dim saveFolder As String = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments)
-    Dim saveFullPath As String = saveFolder + "\" + fileName2
-
-    Private Sub Form1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+    Private Sub Dark_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Form1.Hide()
         retVal = mciSendString("setaudio movie volume to " & TrackBar1.Value, 0, 0, 0) 'Sets the volume to the trackbar
         filename = Chr(34) & filename & Chr(34) 'quotes around the file name
         retVal = mciSendString("open " & filename & " type mpegvideo alias movie", 0, 0, 0) 'opens the file
         retVal = mciSendString("close movie", 0, 0, 0) 'closes the movie
         retVal = mciSendString("open " & filename & " type mpegvideo alias movie parent " & PictureBox1.Handle.ToInt32 & " style child", 0, 0, 0) 'sets it to play in the movie window...
-
-
-
-        'Download the file
-
     End Sub
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
@@ -77,22 +64,17 @@
         retVal = mciSendString("setaudio movie volume to " & TrackBar1.Value, 0, 0, 0)
     End Sub
 
-    Private Sub Button4_Click(sender As Object, e As EventArgs)
-
-    End Sub
-
-    Private Sub Button4_Click_1(sender As Object, e As EventArgs) Handles Button4.Click
+    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
         Me.Hide()
-        Dark.Show()
+        Form1.Show()
     End Sub
 
     Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
         MessageBox.Show("By continuing, you agree to download ffmpeg. It may take up to 3 minutes to download, and once it's done, the converter will open.")
-        Try
-            My.Computer.Network.DownloadFile(fileURL, saveFullPath)
-            Print("Success")
-        Catch ex As Exception
-        End Try
         converter.Show()
+    End Sub
+
+    Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
+
     End Sub
 End Class
